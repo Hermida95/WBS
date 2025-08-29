@@ -1,0 +1,36 @@
+{
+    "python.defaultInterpreterPath": "./backend/venv/bin/python",
+    "python.analysis.extraPaths": [
+        "./backend"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/*.pyc": true,
+        "**/venv": true,
+        "**/.env": true
+    },
+    "terminal.integrated.cwd": "./backend",
+    "files.associations": {
+        "*.env": "dotenv"
+    },
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    }
+}
