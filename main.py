@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.config import settings
+from backend.app.core.config import settings
 from app.models.whatsapp import WhatsAppWebhook
 from app.services.chatbot import chatbot
 import json
